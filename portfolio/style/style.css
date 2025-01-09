@@ -1,0 +1,206 @@
+:root {
+    --primary-color: white;
+    --text-color: #064e7e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+     
+    
+  
+   
+}
+p{
+    text-align: justify;
+}
+body {
+    overflow-y: scroll;
+    font-family: 'Inter', sans-serif; /* For Inter font */
+    overflow-x: hidden;
+    height: 100%;
+   
+  }
+  body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+  
+  
+header{
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px ;    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    list-style: none;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    
+}
+.navbar ul li{
+    margin: 0 10px;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    transition: all 0.2s ease; /* Add transition for all properties */
+    display: inline-block;
+}
+.navbar ul li a:hover {
+    
+    transform: scale(1.1,1.1); /* Scale effect */
+    border-bottom: 1px solid #035a94; /* Border on hover */
+    border-radius: 15%;
+    border-width: 2px;
+    color: #082002; /* Optional: Change text color on hover */
+    transition: all 0.2s ease-out;
+}
+header>section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+}
+.head_name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+}
+.logo{
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the bounds */
+    width: auto; /* Ensures responsiveness */
+    max-width: 80px; /* General size for portfolio logos */
+}
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/background-home.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    background-size: cover;
+    position: relative;
+    align-items: center ;
+    justify-content: right;
+    margin: 2px;
+
+}
+.home_div{
+    margin: 50px;
+}
+.home_name_main{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    display: block;
+    padding-top: 20%;
+    border-bottom: 1px solid #035a94;
+    margin: 2px;
+    
+}
+#home_content{
+    display: block;
+    color: white;
+    margin-top: 10px;
+    font-size: 1em;
+    
+   
+}
+ .home_btn{
+    background-color: white;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+    
+ }
+ .home_btn:hover{
+    background-color: var(--text-color);
+    color: white;
+    border: 1px solid #ffffff;
+    
+ }
+ .home_btn a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Montserrat',sans-serif;
+    
+ }
+ .home_btn a:hover{
+       color: white;
+       transition: all 0.2s ease; /* Add transition for all properties */
+       
+}
+h2{
+    
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 2em;
+    padding-top: 2vh;
+    
+    margin: 2px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px;
+    flex-wrap: wrap;
+   
+}
+.flex-item{
+    flex: 1;
+}
+#flex-item-para{
+    margin: 5%;
+    border-radius: 5px;
+    border-bottom: 1px solid #035a94;
+    padding: 2%;
+    height: 50vh; 
+}
+#profile{
+    padding-top:2%;
+    height: 80vh;
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: ease-in 0.1s;
+    
+    
+}
+.profile_img:hover{
+    border-radius: 50%;
+   transition: ease-out 0.2s;
+    transform: scale(1.1,1.1);
+}
+hr{
+    border: none;
+    border-top: 2px solid #3498db;
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+    width: 50%;
+}
