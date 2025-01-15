@@ -22,6 +22,7 @@ body {
   }
   body::-webkit-scrollbar {
     display: none; /* Hides the scrollbar */
+    scroll-behavior: smooth;
 }
   
   
@@ -61,7 +62,7 @@ header{
 }
 .navbar ul li a:hover {
     
-    transform: translateY(-5px); 
+    transform: scale(1.1);  
     border-bottom: 0.2rem solid #035a94; /* Border on hover */
     
     border-radius: 15%;
@@ -179,14 +180,18 @@ h2{
 #flex-item-para{
     margin: 5%;
     border-radius: 5px;
-    border-bottom: 1px solid #035a94;
+    /* border-bottom: 1px solid #035a94; */
     padding: 2%;
     height: 50vh; 
+   
+    font-size: large;
+    
 }
 #profile{
+    
     padding-top:2%;
     height: 80vh;
-    border-radius: 10px 10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -211,17 +216,19 @@ hr{
 .skill{
     margin: 2px ;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 2fr; /* 1:2 ratio for columns */
-   grid-gap: none;
+    grid-template-columns: 20% 80%; 
+    
+   grid-gap: 0%;
    margin-left: 1%;
 
 }
 .skill-name{
+   
     padding:0%;
 }
 progress{
     width: 100%;
-    height: 8px;
+    height: 10px;
     border-radius: 20px;
     margin: 10px;
     transition: value 0.3s ease-in-out;
@@ -249,10 +256,11 @@ progress::-webkit-progress-bar {
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 10% 10%;
+    overflow: auto;
     
 }
 .project-table-head{
-    background-image:  linear-gradient(45deg,rgba(2, 71, 136, 0.952), rgba(7, 221, 193, 0.836));
+    background-image:  linear-gradient(45deg,rgba(2, 71, 136, 0.952), rgba(70, 157, 240, 0.836));
     height: 10vh;
 }
 .project-name{
@@ -264,15 +272,17 @@ progress::-webkit-progress-bar {
     background-color: #f2f2f2;
     height: 50vh;
     
+    
     border-radius: 10% 10%;
 }
 .project-table-body td{
+    overflow: auto;
     padding: 1%;
     text-align: justify;
 }
 .contact_us{
     margin: auto;
-   
+  
     height: 80vh;
 }
 .contact_us_div{
@@ -421,4 +431,104 @@ marquee {
     margin-top: 20px;
     font-weight: bold;
 }
+@media only screen and (max-width: 786px) {
+    #about{
+        overflow: auto;
+    }
+    header{
+        height: 20vh;
+    }
+    .head_name{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .home_name_main{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .flex-container{
+        display: block;
+        margin: 2px;
+    }
+    #flex-item-para{
+        overflow: auto;
+        height: 100%;
+       
+    }
+    .navbar ul li a {
+        font-size: 17px;
+    }
+    .profile_img{
+        
+        margin: 20px;
+    }
+    .project{
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    #about{
+        height: 100%;
+    }
+    #skills{
+        margin: 24px ;
+     
+    }
+    hr{
+        margin: 20px auto;
+    }
+    .whatsapp-icon{
+        font-size: 25px;
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+    .profile_img{
+        height: auto;
+        margin: 20px;
+    }
+    #project{
+        margin: 20px;
+        height: 100%;
+        
+    }
+    #contact_us{
+        display: block;
+        margin:20px;
 
+    }
+    .whatsapp-icon{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    #about{
+        overflow: auto;
+    }
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: white; 
+    padding: 10px;
+    border-radius: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    color: var(--text-color);
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E; 
+    transform: scale(1.1); 
+    color: white;
+    
+}
+.icons:hover {
+    
+    transform: scale(1.1); 
+    color: white;
+}
