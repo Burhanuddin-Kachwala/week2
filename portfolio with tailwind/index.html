@@ -8,6 +8,8 @@
     <title>Burhanuddin's Website</title>
    <link rel="stylesheet" href="style/output.css">
    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body  class="">
     <!-- navbar -->
@@ -18,7 +20,7 @@
                 <img src="/image/logo.png" alt="logo" class="w-14 h-14 rounded-full">
              </div>
                 <!-- nav links -->
-                 <div class="hidden md:flex space-x-6">
+                 <div class="hidden md:flex space-x-6 ">
                     <a href="#" class="text-gray-900 text-2xl hover:text-primary hover:underline hover:underline-offset-8 hover:scale-110 transition ease-in">Home</a>
                     <a href="#" class="text-gray-900 text-2xl hover:text-primary hover:underline hover:underline-offset-8 hover:scale-110 transition ease-in">About</a>
                     <a href="#" class="text-gray-900 text-2xl hover:text-primary hover:underline hover:underline-offset-8 hover:scale-110 transition ease-in">Projects</a>
@@ -45,6 +47,7 @@
         View Resume
       </a>
     </div>
+</div>
     <!-- about me -->
     <div class="p-3 transition ease-in duration-300">
         <h2 class="text-center text-4xl font-bold m-3 text-primary">About Me</h2>
@@ -57,6 +60,7 @@
             </div>
         </div>
     </div>
+
     <!-- Projects -->
      <div>
         <h2 class="text-center text-4xl font-bold m-3 text-primary ">Projects</h2>
@@ -102,7 +106,7 @@
      </div>
 
      <!-- skills section -->
-    <section id="skills" class="p-6 ">
+    <section id="skills" class="p-6 mb-3">
         <div class="container mx-auto">
             <h2 class="text-center text-4xl font-bold mb-6 text-primary">Skills</h2>
             
@@ -140,9 +144,62 @@
             </div>
         </div>
     </section>
-  </div>
-
  
+  
+
+  <!-- contact  -->
+<div id="contact_us" class="p-6  ">
+    <h2 class="text-center text-4xl font-bold mb-6 text-primary">Contact Me</h2>
+    <div class="flex flex-col lg:flex-row items-center justify-around gap-9">
+        <div class="mb-6 lg:mb-0 lg:w-1/2 justify-end flex">
+            <div class="">
+                <h3 class="text-3xl font-semibold mb-2">Get In Touch</h3>
+            <p class="text-lg text-primary">Tell Me About Your Project</p>
+            </div>
+            
+        </div>
+        <div class="lg:w-1/2 ">
+            <h3 class="text-2xl font-semibold mb-4 ">Send a Message</h3>
+            <form class="space-y-4">
+                <input type="text" placeholder="First-Name Last-Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                <input type="email" placeholder="abc@xyz.com" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                <input type="submit" value="Submit" class="w-1/2 xl:w-full p-3 bg-primary text-white rounded-lg hover:bg-slate-700 cursor-pointer">
+            </form>
+        </div>
+    </div>
+</div>
+ 
+<!--Footer-->
+<footer>
+    <div class="bg-primary text-white p-4">
+        <div class="flex justify-center space-x-4 mb-4">
+            <div>
+                <a href="https://www.linkedin.com/in/burhanuddin-kachwala-b98230102/" target="_blank" class="text-white hover:text-blue-500">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/burhan_kachwala_/" class="text-white hover:text-pink-500">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:kachburhan@gmail.com" class="text-white hover:text-red-500">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <marquee scrollamount="10" scrolldelay="100" >&copy; 2025 Burhanuddin Kachwala | All Rights Reserved</marquee>
+        </div>
+    </div>
+    </footer>
+    <a href="https://wa.me/+918155870807" class="whatsapp-icon fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+   
+
 
   
 </body>
